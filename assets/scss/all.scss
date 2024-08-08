@@ -1,5 +1,12 @@
+@import './base/reset.scss';
+@import './base/base.scss';
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 
 @import './pages/index.scss';
+
+@import './helper/variables.scss';
+// @import './helper/utils.scss';
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
