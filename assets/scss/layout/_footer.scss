@@ -1,4 +1,149 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  background: $primary;
+  color: #FFFFFF;
+}
+
+.left {
+  margin-top: 60px;
+}
+
+.right {
+  margin-top: 48px;
+}
+
+.socical-item {
+  width: 48px;
+}
+
+.phone {
+  font-size: 36px;
+}
+
+.icon-phone {
+  font-size: 36px;
+  margin-right: 20px;
+}
+
+.mail {
+  font-size: 40px;
+}
+
+.icon-mail {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.footer_ul {
+  gap: 48px;
+}
+
+.socical {
+  gap: 32px;
+}
+
+.hr {
+  margin: 32px 0;
+}
+
+.copy_block {
+  .left {
+    margin: 0;
+  }
+
+  .right {
+    margin: 0;
+    gap: 90px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer_nav {
+    margin-bottom: 40px;
+  }
+  .left {
+    margin-top: 56px;
+  }
+
+  .socical {
+    gap: 16px;
+  }
+
+  .socical-item {
+    width: 40px;
+  }
+  
+  .copy_block {
+    padding-bottom: 40px;
+    .left {
+      margin: 0;
+    }
+  
+    .right {
+      margin: 0;
+      gap: 40px;
+    }
+  }
+
+}
+
+@media (max-width:576px) {
+  .footer-container-sm {
+    padding: 0 13px;
+  }
+  
+  .footer_nav {
+    display: none;
+  }
+
+  .left,.right {
+    margin-top: 24px;
+  }
+
+  .socical {
+    gap: 8px;
+  }
+
+  .socical-item {
+    width: 24px;
+  }
+  
+  .phone {
+    font-size: 16px;
+  }
+  
+  .icon-phone {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .mail {
+    font-size: 16px;
+  }
+  
+  .icon-mail {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+ 
+
+  .hr {
+    margin: 24px 0 16px 0;
+  }
+
+  .copy_block {
+    flex-direction: column;
+    padding-bottom: 24px;
+
+    .right {
+      margin-top: 8px;
+      flex-direction: column;
+      gap:0px;
+      span {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  
 }
