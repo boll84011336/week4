@@ -6,13 +6,193 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>2024 切版夏季</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
+    <div class="banner">
+      <div class="container">
+        <div class="text_block">
+          <h2 class="h2">Promise-Desert 2024 早春系列</h2>
+          <h1 class="h1">看得清，才能看得遠</h1>
+          <button class="btn btn_buy">立即購買</button>
+        </div>
+      </div>
+    </div>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+    <div class="specializ">
+      <div class="container content">
+        <h1 class="normal_title">用專業的心，做專業的事</h1>
+        <div class="row">
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="icon mb-6">
+              <img class="specializ_img" src="../assets/images/home-section2-1.png" alt="home-section2-1">
+            </div>
+            <p class="specializ_title fs-6 mb-2">單一價格</p>
+            <span class="specializ_text">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</span>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="icon mb-6"><img class="specializ_img" src="../assets/images/home-section2-2.png"
+                alt="home-section2-1">
+            </div>
+            <p class="specializ_title fs-6 mb-2">20 分鐘即可取件</p>
+            <span class="specializ_text">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</span>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="icon mb-6">
+              <img class="specializ_img" src="../assets/images/home-section2-3.png" alt="home-section2-3">
+            </div>
+            <p class="specializ_title fs-6 mb-2">安心售後服務</p>
+            <span class="specializ_text">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</span>
+          </div>
+
+          <div class="col-3 col-md-6 col-sm-12">
+            <div class="icon mb-6">
+              <img class="specializ_img" src="../assets/images/home-sectioin2-4.png" alt="home-section2-4">
+            </div>
+            <p class="specializ_title fs-6 mb-2">關於鏡片</p>
+            <span class="specializ_text">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="classic">
+      <div class="container content">
+        <h1 class="normal_title">經典系列鏡框</h1>
+        <div class="row">
+          <div class="col-4 col-md-6 col-sm-12">
+            <div>
+              <img src="../assets/images/home-section3-1.png" alt="">
+            </div>
+            <p class="classic_text">OPTICAL</p>
+          </div>
+          <div class="col-4 col-md-6 col-sm-12">
+            <div>
+              <img src="../assets/images/home-section3-2.png" alt="">
+            </div>
+            <p class="classic_text">SUNGLASSES</p>
+          </div>
+          <div class="col-4 col-md-6 col-sm-12">
+            <div>
+              <img src="../assets/images/home-section3-3.png" alt="">
+            </div>
+            <p class="classic_text">FUNCTIONAL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="design">
+      <div class="container content">
+        <h1 class="normal_title" style="color:white;">聯名設計鏡框</h1>
+        <div class="d-flex design_block">
+          <div>
+            <div class="design_img1">
+            </div>
+            <p class="text-center">DOUBLE A+</p>
+          </div>
+          <div>
+            <div class="design_img2">
+            </div>
+            <p class="text-center">YOUTH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom">
+      <div class="container content">
+        <div class="row">
+          <div class="col-3 card_container col-md-6 col-sm-12">
+            <div><img src="../assets/images/home-section5-1.png" alt=""></div>
+            <div class="custom_content">
+              <div>
+                <p class="username mb-2">Jessy</p>
+                <p class="product_name">眼鏡品質優良，下次還會想來這邊購買！</p>
+              </div>
+              <div><span class="date">2021/06/20</span></div>
+            </div>
+          </div>
+          <div class="col-3 card_container col-md-6 col-sm-12">
+            <div><img src="../assets/images/home-section5-2.png" alt=""></div>
+            <div class="custom_content">
+              <div>
+                <p class="username mb-2">凱倫</p>
+                <p class="product_name">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+              </div>
+              <div><span class="date">2021/04/18</span></div>
+            </div>
+          </div>
+          <div class="col-3 card_container col-md-6 col-sm-12">
+            <div><img src="../assets/images/home-section5-3.png" alt=""></div>
+            <div class="custom_content">
+              <div>
+                <p class="username mb-2">悠悠</p>
+                <p class="product_name">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+              </div>
+              <div><span class="date">2020/12/25</span></div>
+            </div>
+          </div>
+          <div class="col-3 card_container col-md-6 col-sm-12">
+            <div><img src="../assets/images/home-section5-4.png" alt=""></div>
+            <div class="custom_content">
+              <div>
+                <p class="username mb-2">Kyuan</p>
+                <p class="product_name">服務很好，品質沒有任何問題，非常喜歡。</p>
+              </div>
+              <div><span class="date">2020/10/31</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="container content">
+        <h1 class="normal_title">聯絡我們</h1>
+        <div class="contact_block">
+          <p class="fs-5 mb-6">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+          <div class="form">
+            <div class="mb-4">
+              <label for="name">姓名</label>
+              <input type="text" placeholder="陳小明" type="text" id="name" />
+            </div>
+            <div class="mb-4">
+              <label for="phone">聯絡電話</label>
+              <input type="tel" placeholder="0912-345-678" type="text" id="phone" />
+            </div>
+            <div class="mb-4">
+              <label for="email">電子郵件</label>
+              <input type="email" placeholder="example@email.com" type="text" id="email" />
+            </div>
+            <div class="mb-4">
+              <label for="name">意見反應</label>
+              <textarea placeholder="請輸入您的意見" name="" id="" cols="30"></textarea>
+            </div>
+            <div class="check_area">
+              <input type="checkbox" id="check" />
+              <label for="check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+            </div>
+            <div class="button"><button class="btn confirm">確認送出</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
 

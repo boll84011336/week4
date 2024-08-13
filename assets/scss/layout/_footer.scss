@@ -88,7 +88,8 @@
 
 @media (max-width:576px) {
   .footer-container-sm {
-    padding: 0 13px;
+    max-width: 1320px;
+    padding: 0 14px;
   }
   
   .footer_nav {

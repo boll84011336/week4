@@ -11,6 +11,13 @@ body {
   line-height: 1.5;
 }
 
+// :root {
+// 	--primary-color: #AA0601;
+//   --text-primary-color:#650300;
+// 	--secindary: black;
+// 	--bg-light:  #FFFFFF;
+// }
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -21,4 +28,23 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+    max-width: 720px; /*696 => 欄寬*12欄 + 間距*11。 然後左右有pl pr 所以加24 讓內容維持在696*/
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 372px;
+    padding: 0 14px;
+  }
 }

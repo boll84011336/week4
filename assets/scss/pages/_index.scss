@@ -1,30 +1,300 @@
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-  /* outline: solid 1px; */
+.banner {
+  background-image: url("../images/home-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  // height: calc(100vh - 80px);
+  height: 787px;
+  .text_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // height: calc(100vh - 80px);
+    height: 787px;
+    justify-content: center;
+    .h1 {
+      font-size: 64px;
+      color: $secondary;
+      font-weight: bold;
+    }
+    .h2 {
+      font-size: 36px;
+      color: $secondary;
+    }
+  }
 }
 
-body {
-  font-family: 'Noto Sans TC', sans-serif;
-  line-height: 1.5;
+@media (max-width:767px) {
+  .banner {
+    background-image: url("../images/home-header-sm.png");
+    height: 767px;
+  }
 }
 
-// :root {
-// 	--primary-color: #AA0601;
-//   --text-primary-color:#650300;
-// 	--secindary: black;
-// 	--bg-light:  #FFFFFF;
-// }
+@media (max-width:576px) {
+  .banner {
+    background-image: url("../images/home-header-sm.png");
+    .text_block {
+      .h1 {
+        font-size: 36px;
+      }
+      .h2 {
+        font-size: 24px;
+      }
+    }
+  }
 
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
+.btn_buy {
+  background-color: $primary;
+  font-size: 20px;
+  color:#FFFFFF;
+  :hover {
+    background-color: #fff;
+    color: $primary;
+  }
+}
+
+// 第二塊
+.specializ {
+  background-color: #fbf2f2;
+}
+
+.normal_title {
+  font-size: 48px;
+  color:$secondary;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 32px;
+}
+
+.row {
+  display: flex;
+  gap:24px;
+}
+
+.col-3 {
+  width: 25%;
+  // border: 1px solid;
+
+  .icon {
+    text-align: center;
+  }
+
+  .specializ_img {
+    width: 83.33px;
+  }
+  .specializ_title {
+    color: $primary;
+    text-align: center;
+  }
+}
+
+.content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (max-width:767px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .col-md-6 {
+    width: 48%
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .normal_title {
+    font-size: 24px;
+  }
+
+  .content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+// 第三塊
+.col-4 {
+  width: 33.33%;
+}
+.classic {
+  text-align: center;
+  .classic_text {
+    color: $primary;
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width:767px) {
+  .classic {
+    .col-md-6 {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .classic {
+    .col-sm-12 {
+      width: 100%;
+    }
+  }
+}
+
+// 聯名設計
+.design {
+  background-image: url("../images/index-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .design_block {
+    .design_img1 {
+      width: 648px;
+      height: 240px;
+      background-image: url("../images/home-section4-1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+    .design_img2 {
+      width: 648px;
+      height: 240px;
+      background-image: url("../images/home-section4-2.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    p {
+      color: $primary;
+      font-size: 48px;
+      background: #FFFFFF;
+      font-weight: bold;
+    }
+  }
+  
+}
+
+@media (max-width:767px) {
+  .design {
+    .design_block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:24px;
+      .design_img1 {
+        width: 696px
+      }
+      .design_img2 {
+        width: 696px
+      }
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .design {
+    .design_block {
+      .design_img1 {
+        width: 348px;
+      }
+      .design_img2 {
+        width: 348px
+      }
+    }
+  }
+}
+
+// 顧客推薦
+.custom {
+  .card_container {
+    border: 1px solid;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    .custom_content {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 205px;
+      .date {
+        color:#707070;
+      }
+    }
+
+  }
+}
+
+//聯絡 
+.contact {
+  background-color: #fbf2f2;
+  .contact_block {
+    padding-top: 16px;
+    width: 636px;
+    margin: 0 auto;
+    .form {
+      label {
+        display: block;
+      }
+      input,textarea {
+        width: 100%;
+        height: 36px;
+      }
+      textarea {
+        height: 136px;
+      }
+      .check_area {
+        margin-bottom: 48px;
+        display: flex;
+        align-items: center;
+        input {
+          width: 24px;
+          margin-right: 8px;
+        }
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        .confirm {
+          width: 416px;
+          padding: 16px;
+          background-color: $primary;
+          color:white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .contact {
+    .contact_block {
+      padding-top: 0;
+      width: 576px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .contact {
+    .contact_block {
+      padding-top: 0;
+      width: 348px;
+      margin: 0 auto;
+      .form {
+        .check_area {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
 }

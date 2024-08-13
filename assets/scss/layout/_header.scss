@@ -3,11 +3,6 @@
   color: #FFFFFF;
 }
 
-.container {
-  max-width: 1320px;
-  margin: 0 auto;
-}
-
 .header_ul {
   gap: 64px;
 }
@@ -15,12 +10,6 @@
 .logo {
   width: 80px;
   margin: 16px 0;
-}
-
-@media (max-width:767px) {
-  .container {
-    padding: 0 36px;
-  }
 }
 
 @media (max-width:576px) {
@@ -33,7 +22,7 @@
 
   // 這邊同一個div 雖然class名稱不同 但是都吃padding所以會覆蓋掉767的padding
   .container-sm {
-    padding: 0;
+    max-width: 1320px;
     flex-direction: column;
   }
 
