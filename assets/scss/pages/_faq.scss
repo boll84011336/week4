@@ -1,0 +1,78 @@
+.faq {
+  .container {
+    padding-top: 96px;
+    padding-bottom: 80px;
+  }
+}
+
+.faq_title {
+  display: flex;
+  margin-bottom: 32px;
+  .title_line {
+    width: 8px; /* 設置線條的寬度，這是線條的厚度 */
+    height: 72px; /* 設置線條的高度 */
+    background-color: #9F1213; /* 設置線條的顏色 */
+    margin-right: 16px;
+  }
+  .h1 {
+    font-weight: bold;
+  }
+}
+
+.faq_content {
+  .h4 {
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  .h5 {
+    font-size: 20px;
+  }
+  .faq_question {
+    width: 856px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width:767px) {
+  .faq {
+    .container {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+
+  .faq_content {
+    .faq_question {
+      width: 696px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .faq_container {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+}
+
+@media (max-width:576px) {
+  .faq {
+    .container {
+      padding-top: 40px;
+      padding-bottom: 64px;
+    }
+  }
+
+  .faq_content {
+    .faq_question {
+      width: 348px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .faq_container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
