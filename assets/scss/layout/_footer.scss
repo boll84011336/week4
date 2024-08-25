@@ -3,6 +3,10 @@
   color: #FFFFFF;
 }
 
+.footer-container-sm {
+  padding: 0 14px;
+}
+
 .left {
   margin-top: 60px;
 }
@@ -16,21 +20,21 @@
 }
 
 .phone {
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .icon-phone {
-  font-size: 36px;
-  margin-right: 20px;
+  font-size: 36px!important;;
+  margin-right: 10px;
 }
 
 .mail {
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .icon-mail {
-  font-size: 40px;
-  margin-right: 20px;
+  font-size: 36px!important;;
+  margin-right: 10px;
 }
 
 .footer_ul {
@@ -60,8 +64,13 @@
   .footer_nav {
     margin-bottom: 40px;
   }
+
   .left {
     margin-top: 56px;
+  }
+
+  .footer_ul {
+    gap: 16px;
   }
 
   .socical {
@@ -84,6 +93,15 @@
     }
   }
 
+}
+
+@media (max-width:590px) {
+  .copy_block {
+    .right {
+      margin: 0;
+      gap: 15px;
+    }
+  }
 }
 
 @media (max-width:576px) {
